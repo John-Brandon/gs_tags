@@ -3,11 +3,7 @@
 # Purpose: Read acoustic tag detection data for green sturgeon. 
 #
 # Notes: 
-#   - 4GB data file with a *csv file extension, but not comma delimited. And
-#     the nature of how the file is delimited is a little bit of a puzzle, so code
-#     below is trying to work that system out. First attempts do read the data, but 
-#     instead of individual columns, getting a single column with a long string for 
-#     each row.
+#   - 4GB data file with a *csv file extension, but is is not comma delimited. 
 #  
 # Author: John R. Brandon, PhD (ICF)
 #         john.brandon at icf.com
