@@ -78,7 +78,7 @@ dat_plt_cropped = filter(dat_2010, month %in% 2:6) %>%
   st_as_sf(coords = c("Lon", "Lat"), crs = crs_gs) %>% 
   st_crop(xmin = -124.6, xmax = -120.7, ymin = 37.25, ymax = 38.5)
 
-shp_cal_zoomed = st_read('~/shapefiles/California/California.shp') %>% 
+shp_cal_zoomed = st_read(here::here('shapefiles', 'California', 'California.shp')) %>% 
   st_transform(crs = st_crs(dat_plt)) %>%  # Make CRS(polygon) == CRS(points) 
   st_crop(xmin = -124.6, xmax = -120.7, ymin = 37.25, ymax = 38.5)
 
